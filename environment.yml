@@ -1,0 +1,11 @@
+name: dl_ai_chat_tf1
+channels:
+  - conda-forge
+dependencies:
+  - python=3.7
+  - pip
+  - pip:
+      - tensorflow==1.15.5
+      - numpy==1.19.5
+      - jieba==0.42.1
+      - nltk==3.6.7
