@@ -1,0 +1,4 @@
+tensorflow==1.15.5
+numpy==1.19.5
+jieba==0.42.1
+nltk==3.6.7
