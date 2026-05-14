@@ -17,18 +17,18 @@ This repository is a **legacy TensorFlow 1.x** Chinese Seq2Seq chatbot project.
 ## Data and Model Directories
 
 - `model/` contains TensorFlow checkpoint files used for restore/training continuation and prediction.
-- `data/` contains generated vocabulary and NumPy data files (such as `.pkl` and `.npy`).
+- `data/` contains generated vocabulary and NumPy data files, such as `.pkl` and `.npy`.
 
-## Create Environment (Conda)
+## Create Environment With Conda
 
 ```bash
 conda env create -f environment.yml
 conda activate dl_ai_chat_tf1
 ```
 
-## Install Dependencies (pip alternative)
+## Install Dependencies With pip
 
-If you prefer pip + virtualenv instead of conda:
+If you prefer pip and virtualenv instead of conda:
 
 ```bash
 python3.7 -m venv .venv
@@ -39,7 +39,7 @@ pip install -r requirements.txt
 
 ## Preprocessing
 
-Run data preprocessing to generate vocabulary/data artifacts:
+Run data preprocessing to generate vocabulary and data artifacts:
 
 ```bash
 python data_processing_ch.py
@@ -59,17 +59,16 @@ python pred.py
 
 ## Run in GitHub Codespaces / Dev Container
 
-This project can be run fully in a cloud dev environment (for example, GitHub Codespaces)
-using the included `.devcontainer/` configuration.
+This project can be run in a cloud dev environment, such as GitHub Codespaces, using the included `.devcontainer/` configuration.
 
-After the container is created, verify runtime and TensorFlow:
+After the container is created, verify Python and TensorFlow:
 
 ```bash
 python --version
 python -c "import tensorflow as tf; print(tf.__version__)"
 ```
 
-Run prediction with existing `data/` and `model/` artifacts:
+Run prediction with the existing `data/` and `model/` artifacts:
 
 ```bash
 python pred.py
